@@ -1,0 +1,12 @@
+/Users/nihadae/RiderProjects/CodeAz/CodeAz/bin/Debug/netcoreapp3.1/CodeAz.deps.json
+/Users/nihadae/RiderProjects/CodeAz/CodeAz/bin/Debug/netcoreapp3.1/CodeAz.runtimeconfig.json
+/Users/nihadae/RiderProjects/CodeAz/CodeAz/bin/Debug/netcoreapp3.1/CodeAz.runtimeconfig.dev.json
+/Users/nihadae/RiderProjects/CodeAz/CodeAz/bin/Debug/netcoreapp3.1/CodeAz.dll
+/Users/nihadae/RiderProjects/CodeAz/CodeAz/bin/Debug/netcoreapp3.1/CodeAz.pdb
+/Users/nihadae/RiderProjects/CodeAz/CodeAz/obj/Debug/netcoreapp3.1/CodeAz.csprojAssemblyReference.cache
+/Users/nihadae/RiderProjects/CodeAz/CodeAz/obj/Debug/netcoreapp3.1/CodeAz.AssemblyInfoInputs.cache
+/Users/nihadae/RiderProjects/CodeAz/CodeAz/obj/Debug/netcoreapp3.1/CodeAz.AssemblyInfo.cs
+/Users/nihadae/RiderProjects/CodeAz/CodeAz/obj/Debug/netcoreapp3.1/CodeAz.csproj.CoreCompileInputs.cache
+/Users/nihadae/RiderProjects/CodeAz/CodeAz/obj/Debug/netcoreapp3.1/CodeAz.dll
+/Users/nihadae/RiderProjects/CodeAz/CodeAz/obj/Debug/netcoreapp3.1/CodeAz.pdb
+/Users/nihadae/RiderProjects/CodeAz/CodeAz/obj/Debug/netcoreapp3.1/CodeAz.genruntimeconfig.cache
