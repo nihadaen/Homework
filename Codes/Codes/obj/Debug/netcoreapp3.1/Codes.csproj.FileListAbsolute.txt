@@ -1,0 +1,13 @@
+/Users/nihadae/Desktop/Codes/Codes/bin/Debug/netcoreapp3.1/Codes.deps.json
+/Users/nihadae/Desktop/Codes/Codes/bin/Debug/netcoreapp3.1/Codes.runtimeconfig.json
+/Users/nihadae/Desktop/Codes/Codes/bin/Debug/netcoreapp3.1/Codes.runtimeconfig.dev.json
+/Users/nihadae/Desktop/Codes/Codes/bin/Debug/netcoreapp3.1/Codes.dll
+/Users/nihadae/Desktop/Codes/Codes/bin/Debug/netcoreapp3.1/Codes.pdb
+/Users/nihadae/Desktop/Codes/Codes/obj/Debug/netcoreapp3.1/Codes.csproj.AssemblyReference.cache
+/Users/nihadae/Desktop/Codes/Codes/obj/Debug/netcoreapp3.1/Codes.GeneratedMSBuildEditorConfig.editorconfig
+/Users/nihadae/Desktop/Codes/Codes/obj/Debug/netcoreapp3.1/Codes.AssemblyInfoInputs.cache
+/Users/nihadae/Desktop/Codes/Codes/obj/Debug/netcoreapp3.1/Codes.AssemblyInfo.cs
+/Users/nihadae/Desktop/Codes/Codes/obj/Debug/netcoreapp3.1/Codes.csproj.CoreCompileInputs.cache
+/Users/nihadae/Desktop/Codes/Codes/obj/Debug/netcoreapp3.1/Codes.dll
+/Users/nihadae/Desktop/Codes/Codes/obj/Debug/netcoreapp3.1/Codes.pdb
+/Users/nihadae/Desktop/Codes/Codes/obj/Debug/netcoreapp3.1/Codes.genruntimeconfig.cache
