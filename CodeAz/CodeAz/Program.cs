@@ -6,163 +6,103 @@ namespace CodeAz
     {
         static void Main(string[] args)
         {
-            wantedName();
-        }
-
-        #region Class tasks
-        
-        static int Sum(int num1, int num2)
-        {
-            return num1+num2;
-        }
-        
-        static bool isEven(int num)
-        {
-            return num % 2 == 0;
-        }
-        
-        static int bigNum(int num1,int num2)
-        {
-            if (num1 > num2)
+            int[] nums = {2,5,1,32,52,3223};
+            addArray(ref nums, 56);
+            for (int i = 0; i < nums.Length; i++)
             {
-                return num1;
+                Console.Write(nums[i] + " ");
             }
-            return num2;
-        }
-        
-        static void arrayWrite(int[] nums)
-        {
-            foreach (var i in nums)
-            { 
-                Console.WriteLine(nums[i]);
-            }
-        }
-        
-        static int findCount(int[] numbers,int n)
-        {
-            var count = 0;
+            Console.WriteLine("");
+            string str = " Hikmet Abbasov ";
+            deleteSpace(ref str);
+            Console.WriteLine(str);
+            int x = -12;
+            positiveNum(ref x);
+            Console.WriteLine(x);
+            int[] numbers = new[] { 1, 3, 5, -1, -4, -52, 54, -2 };
+            positiveArr(ref numbers);
             for (int i = 0; i < numbers.Length; i++)
             {
-                if(numbers[i] == n)
-                {
-                    count++;
-                }
+                Console.Write(numbers[i] + " ");
             }
-            return count;
         }
-        
-        static int average(int[] points)
+
+        #region Task1
+
+        // 1. Parameter olaraq integer array variable-i ve bir integer value qebul eden ve
+        // hemin integer value-nu integer array-e yeni element kimi elave eden metod.
+
+        static void addArray(ref int[] arr, int value)
         {
-            int sum = 0;
-            int avg = 0;
-            for (int i = 0; i < points.Length; i++)
-            { 
-                sum += points[i];
-            }
-            if(points.Length>0)
-                avg = sum / points.Length;
-            return avg;
-        }
-        
-        static bool hasName(string[] names,string name)
-        {
-            for (int i = 0; i < names.Length; i++)
+            int[] newArr = new int[arr.Length + 1];
+
+            for (int i = 0; i < arr.Length; i++)
             {
-                if (names[i] == name)
-                    return true;
+                newArr[i] = arr[i];
             }
-            return false;
-        }
+            newArr[newArr.Length - 1] = value;
+
+            arr = newArr;
+        } 
         
         #endregion
 
         #region Task2
 
-        // - Verilmis adlar siyahisinda (string array) nece adin uzunlugunun 5-den boyuk oldugunu tapan proqram
+        //2. Parametr olaraq 1 string dəyər qəbul edən və həmin string dəyəri əvvəlində və
+        //sonunda boşluqlar qalmayacaq hala gətirən metod.
 
-        static int howMany(string[] names)
+        static void deleteSpace(ref string str)
         {
-            int count = 0;
-            for (int i = 0; i < names.Length; i++)
+            char[] ch = str.ToCharArray();
+            string newStr = "";
+            for (int i = 0; i < ch.Length; i++)
             {
-                if (names[i].Length > 5)
-                    count++;
+                if (ch[i] == ' ')
+                {
+                    
+                }
+                else
+                {
+                    newStr += ch[i];
+                }
             }
 
-            return count;
+            str = newStr;
         }
+
 
         #endregion
 
         #region Task3
 
-        //Verilmis ededler siyahisindaki cut ededlerden ibraret yeni bir array qaytaran method.Misalcun
-        //gonderilmis ededler siyahisinda {1,3,4,5,6} deyerleri varsa method geriye {4,6} deyerlerinden
-        //ibaret bir array qaytarmalidir
-        
-        static int[] evenArr(int[] nums)
+        //3. Qəbul etdiyi ədədi musbətə ceviren metod
+
+        static void positiveNum(ref int num)
         {
-            int count = 0;
-            for (int i = 0; i < nums.Length; i++)
+            if (num < 0)
             {
-                if (nums[i] % 2 == 0)
-                {
-                    count++;
-                }
+                num *= -1;
             }
-
-            int[] newArr = {};
-
-            if (count > 0)
-            {
-                newArr = new int[count];
-                int a = 0;
-                for (int i = 0; i < nums.Length; i++)
-                {
-                    if (nums[i] % 2 == 0)
-                    {
-                        newArr[a] = nums[i];
-                        a++;
-                    }
-                }
-            }
-            // Array qaytarır sadəcə System.Int32[] olaraq. Çünki print etmədim arrayin olduğu adresi göstərir sadəcə. 
-            // ToString methodu işlətmədim. Ama print etmək istəsək edə bilərəm sadəcə burda yalnız qaytar deyir. 
-            return newArr;
         }
 
         #endregion
+
+        #region Task4
         
-        #region additionalTask
-        
-        // - Layihe ise dusdukde sizden adlarin sayini istesin. Daha sonra o say qeder adlari daxil edin.
-        // Daha sonra axtardiginiz adi istesin, onu da daxil etdikden sonra siyahida olub olmadigini qaytarsin
-        static void wantedName()
+        //4. Qəbul etdiyi ədədlər siyahısının içərisindəki bütün ədədləri müsbət hala gətirən metod
+
+        static void positiveArr(ref int[] nums)
         {
-            Console.WriteLine("Adların sayını qeyd edin: ");
-            string numStr = Console.ReadLine();
-            int x = Convert.ToInt32(numStr);
-            string[] names = new string[x];
-            for (int i = 0; i < x; i++)
+            for (int i = 0; i < nums.Length; i++)
             {
-                Console.WriteLine("Ad daxil edin: ");
-                names[i] = Console.ReadLine();
-            }
-
-            Console.WriteLine("Axtardığınız adı daxil edin: ");
-            string desiredName = Console.ReadLine();
-            for (int i = 0; i < names.Length; i++)
-            {
-                if (names[i].Equals(desiredName))
+                if (nums[i] < 0)
                 {
-                    Console.WriteLine("Daxil etdiyiniz ad siyahıda var.");
-                    return;
+                    nums[i] *= -1;
                 }
+                
             }
-
-            Console.WriteLine("Daxil etdiyiniz ad siyahıda yoxdur.");
         }
-
         #endregion
     }
 }
