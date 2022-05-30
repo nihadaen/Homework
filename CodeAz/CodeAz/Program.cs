@@ -7,28 +7,51 @@ namespace CodeAz
     {
         static void Main(string[] args)
         {
-            Notebook[] notebooks = new Notebook[5];
-            notebooks[0] = new Notebook("asd", "asd", 5.5);
-            notebooks[1] = new Notebook("dfg", "asdsd", 65);
-            notebooks[2] = new Notebook("hhj", "eqw", 1.25);
-            notebooks[3] = new Notebook("asdds", "5te3", 12);
-            notebooks[4] = new Notebook("bvd", "nrth", 16);
-            Console.WriteLine("Enter a minimum price: ");
-            string numStr = Console.ReadLine();
-            int minPrice = Convert.ToInt32(numStr);
-            Console.WriteLine("Enter a maximum price: ");
-            string numStrNew = Console.ReadLine();
-            int maxPrice = Convert.ToInt32(numStrNew);
-            for (int i = 0; i < notebooks.Length; i++)
+            Console.WriteLine("İşçi sayı daxil edin: ");
+            string str = Console.ReadLine();
+            int x = Convert.ToInt32(str);
+            Employee[] employees = new Employee[x];
+            for (int i = 0; i < x; i++)
             {
-                if (notebooks[i].Price > minPrice && notebooks[i].Price < maxPrice)
+                Console.WriteLine($"{i+1}. İşçinin adını daxil edin: ");
+                string fullName = Console.ReadLine();
+                Console.WriteLine($"{i+1}. İşçinin yaşını daxil edin: ");
+                string ageStr = Console.ReadLine();
+                int ageInt = Convert.ToInt32(ageStr);
+                Console.WriteLine($"{i+1}. İşçinin maaşını daxil edin: ");
+                string salary = Console.ReadLine();
+                int salInt = Convert.ToInt32(salary);
+                Console.WriteLine($"{i+1}. İşçinin pozisiyasını daxil edin: ");
+                string position = Console.ReadLine();
+                employees[i] = new Employee(fullName, ageInt, salInt, position);
+            }
+            Console.WriteLine("Filtirləmə aparmaq istəyirsinizmi? Yes/No");
+            string check = Console.ReadLine();
+            if (check.Equals("Yes"))
+            {
+                Console.WriteLine("Minimum maaş daxil edin: ");
+                string minStr = Console.ReadLine();
+                Console.WriteLine("Maksimum maaş daxil edin: ");
+                string maxStr = Console.ReadLine();
+                int minSal = Convert.ToInt32(minStr);
+                int maxSal = Convert.ToInt32(maxStr);
+                Console.WriteLine("Filtrlənmiş işçilər: ");
+                for (int i = 0; i < x; i++)
                 {
-                    Console.WriteLine(notebooks[i].Name);
+                    if (employees[i].Salary >= minSal && employees[i].Salary <= maxSal)
+                    {
+                        employees[i].showInfo();
+                    }
                 }
             }
-
-            Car car = new Car("BMW", "i328", 40, 1, 30);
-            car.Drive(20);
+            else
+            {
+                for (int i = 0; i < x; i++)
+                {
+                    Console.WriteLine("İşçilər: ");
+                    employees[i].showInfo();
+                }
+            }
         }
     }
 }
