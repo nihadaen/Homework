@@ -7,51 +7,95 @@ namespace CodeAz
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("İşçi sayı daxil edin: ");
-            string str = Console.ReadLine();
-            int x = Convert.ToInt32(str);
-            Employee[] employees = new Employee[x];
-            for (int i = 0; i < x; i++)
+            #region practice
+
+            string str = "abca";
+            string newStr = "abca";
+            Console.WriteLine(str.Clone());
+            Console.WriteLine(str.CompareTo(newStr));
+            Console.WriteLine(str.EndsWith("ca"));
+            Console.WriteLine(str.IndexOf("b"));
+            string str1 = "ABCD";
+            Console.WriteLine(str1.ToLower());
+            Console.WriteLine(str.ToUpper());
+            string fruits = "alma,armud,banan,gilas,kivi";
+            string[] arr = fruits.Split(",");
+            for (int i = 0; i < arr.Length; i++)
             {
-                Console.WriteLine($"{i+1}. İşçinin adını daxil edin: ");
-                string fullName = Console.ReadLine();
-                Console.WriteLine($"{i+1}. İşçinin yaşını daxil edin: ");
-                string ageStr = Console.ReadLine();
-                int ageInt = Convert.ToInt32(ageStr);
-                Console.WriteLine($"{i+1}. İşçinin maaşını daxil edin: ");
-                string salary = Console.ReadLine();
-                int salInt = Convert.ToInt32(salary);
-                Console.WriteLine($"{i+1}. İşçinin pozisiyasını daxil edin: ");
-                string position = Console.ReadLine();
-                employees[i] = new Employee(fullName, ageInt, salInt, position);
+                Console.WriteLine(arr[i]);
             }
-            Console.WriteLine("Filtirləmə aparmaq istəyirsinizmi? Yes/No");
-            string check = Console.ReadLine();
-            if (check.Equals("Yes"))
+
+            string example = "   sadf asads    ";
+            Console.WriteLine(example.Trim());
+            char ch = 'a';
+            Console.WriteLine(Char.IsDigit(ch));
+            Console.WriteLine(Char.IsLetter(ch));
+
+            #endregion
+
+            string abc = "Ab1";
+            Console.WriteLine(check(abc));
+            string newString = " Salam Aze Code";
+            Console.WriteLine(firstWord(ref newString));
+            int[] arrInts = { 1, 4, 5, 6, 4, 3, 4 };
+            int num = 12;
+            addArr(ref arrInts, num);
+            foreach (var i in arrInts)
             {
-                Console.WriteLine("Minimum maaş daxil edin: ");
-                string minStr = Console.ReadLine();
-                Console.WriteLine("Maksimum maaş daxil edin: ");
-                string maxStr = Console.ReadLine();
-                int minSal = Convert.ToInt32(minStr);
-                int maxSal = Convert.ToInt32(maxStr);
-                Console.WriteLine("Filtrlənmiş işçilər: ");
-                for (int i = 0; i < x; i++)
+                Console.WriteLine(i);
+            }
+        }
+
+        static bool check(string str)
+        {
+            bool check1 = false;
+            bool check2 = false;
+            bool check3 = false;
+            char[] chars = str.ToCharArray();
+            for (int i = 0; i < chars.Length; i++)
+            {
+                if (Char.IsDigit(chars[i]))
                 {
-                    if (employees[i].Salary >= minSal && employees[i].Salary <= maxSal)
-                    {
-                        employees[i].showInfo();
-                    }
+                    check1= true;
+                }
+
+                if (Char.IsLower(chars[i]))
+                {
+                    check2 = true;
+                }
+
+                if (Char.IsUpper(chars[i]))
+                {
+                    check3 = true;
                 }
             }
-            else
+
+            return (check1 && check2 && check3);
+        }
+
+        static string firstWord(ref string str)
+        {
+            string newStr = str.Trim();
+            char[] chars = newStr.ToCharArray();
+            int index = 0;
+            for (int i = 0; i < str.Length; i++)
             {
-                for (int i = 0; i < x; i++)
+                if (chars[i] == ' ')
                 {
-                    Console.WriteLine("İşçilər: ");
-                    employees[i].showInfo();
+                    index = i;
+                    Console.WriteLine(chars[i]);
+                    break;
                 }
             }
+
+            return newStr.Substring(0, index);
+        }
+
+        static void addArr(ref int[] arr, int num)
+        {
+            Array.Resize(ref arr, arr.Length + 1);
+            arr[arr.Length - 1] = num;
+
         }
     }
 }
