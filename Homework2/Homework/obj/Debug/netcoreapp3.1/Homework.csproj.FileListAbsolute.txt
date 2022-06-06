@@ -1,0 +1,15 @@
+/Users/nihadae/Desktop/Homework/Homework/bin/Debug/netcoreapp3.1/Homework.deps.json
+/Users/nihadae/Desktop/Homework/Homework/bin/Debug/netcoreapp3.1/Homework.runtimeconfig.json
+/Users/nihadae/Desktop/Homework/Homework/bin/Debug/netcoreapp3.1/Homework.runtimeconfig.dev.json
+/Users/nihadae/Desktop/Homework/Homework/bin/Debug/netcoreapp3.1/Homework.dll
+/Users/nihadae/Desktop/Homework/Homework/bin/Debug/netcoreapp3.1/Homework.pdb
+/Users/nihadae/Desktop/Homework/Homework/bin/Debug/netcoreapp3.1/ClassLibrary.dll
+/Users/nihadae/Desktop/Homework/Homework/bin/Debug/netcoreapp3.1/ClassLibrary.pdb
+/Users/nihadae/Desktop/Homework/Homework/obj/Debug/netcoreapp3.1/Homework.csprojAssemblyReference.cache
+/Users/nihadae/Desktop/Homework/Homework/obj/Debug/netcoreapp3.1/Homework.AssemblyInfoInputs.cache
+/Users/nihadae/Desktop/Homework/Homework/obj/Debug/netcoreapp3.1/Homework.AssemblyInfo.cs
+/Users/nihadae/Desktop/Homework/Homework/obj/Debug/netcoreapp3.1/Homework.csproj.CoreCompileInputs.cache
+/Users/nihadae/Desktop/Homework/Homework/obj/Debug/netcoreapp3.1/Homework.csproj.CopyComplete
+/Users/nihadae/Desktop/Homework/Homework/obj/Debug/netcoreapp3.1/Homework.dll
+/Users/nihadae/Desktop/Homework/Homework/obj/Debug/netcoreapp3.1/Homework.pdb
+/Users/nihadae/Desktop/Homework/Homework/obj/Debug/netcoreapp3.1/Homework.genruntimeconfig.cache

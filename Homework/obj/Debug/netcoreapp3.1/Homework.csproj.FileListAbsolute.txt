@@ -13,3 +13,5 @@
 /Users/nihadae/Desktop/Homework/Homework/obj/Debug/netcoreapp3.1/Homework.dll
 /Users/nihadae/Desktop/Homework/Homework/obj/Debug/netcoreapp3.1/Homework.pdb
 /Users/nihadae/Desktop/Homework/Homework/obj/Debug/netcoreapp3.1/Homework.genruntimeconfig.cache
+/Users/nihadae/Desktop/UBCO/Homework/Homework/obj/Debug/netcoreapp3.1/Homework.dll
+/Users/nihadae/Desktop/UBCO/Homework/Homework/obj/Debug/netcoreapp3.1/Homework.pdb

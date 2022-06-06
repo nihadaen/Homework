@@ -16,16 +16,17 @@ namespace Homework
         public double TotalIncome { get =>_totalIncome; }
         public void AddProduct(Product product)
         {
-            bool check = false;
+            bool check = true;
             if (_products.Length == 0)
             {
                 check = true;
             }
             for (int i = 0; i < _products.Length; i++)
             {
-                if (_products[i].No != product.No)
+                if (_products[i].No == product.No)
                 {
-                    check = true;
+                    check = false;
+                    break;
                 }
             }
 

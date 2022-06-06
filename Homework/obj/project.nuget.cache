@@ -1,8 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "zJMTN4yPk3e7A59rBOGGuVsXQVfqZ6W2AQMD4FyKMqHWCzNwH99SWGjY/s3q2WttKHUSu8BdV5QT/fnrSZV0uQ==",
-  "success": true,
-  "projectFilePath": "/Users/nihadae/Desktop/Homework/Homework/Homework.csproj",
+  "dgSpecHash": "Az9nUPjLGZAS79Cw7eeeI0kRSJ/AE4CyAGZcPrOVpbmIZQROM0fC/GOccPeIfR7Eb0UQj8XqBeDKDb4cS7zxZw==",
+  "success": false,
+  "projectFilePath": "/Users/nihadae/Desktop/UBCO/Homework/Homework/Homework.csproj",
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project '/Users/nihadae/Desktop/UBCO/Homework/ClassLibrary/ClassLibrary.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "/Users/nihadae/Desktop/UBCO/Homework/ClassLibrary/ClassLibrary.csproj",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
 }
