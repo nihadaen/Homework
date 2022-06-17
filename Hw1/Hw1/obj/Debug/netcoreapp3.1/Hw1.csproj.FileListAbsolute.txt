@@ -1,0 +1,12 @@
+/Users/nihadae/Desktop/Hw1/Hw1/bin/Debug/netcoreapp3.1/Hw1.deps.json
+/Users/nihadae/Desktop/Hw1/Hw1/bin/Debug/netcoreapp3.1/Hw1.runtimeconfig.json
+/Users/nihadae/Desktop/Hw1/Hw1/bin/Debug/netcoreapp3.1/Hw1.runtimeconfig.dev.json
+/Users/nihadae/Desktop/Hw1/Hw1/bin/Debug/netcoreapp3.1/Hw1.dll
+/Users/nihadae/Desktop/Hw1/Hw1/bin/Debug/netcoreapp3.1/Hw1.pdb
+/Users/nihadae/Desktop/Hw1/Hw1/obj/Debug/netcoreapp3.1/Hw1.csprojAssemblyReference.cache
+/Users/nihadae/Desktop/Hw1/Hw1/obj/Debug/netcoreapp3.1/Hw1.AssemblyInfoInputs.cache
+/Users/nihadae/Desktop/Hw1/Hw1/obj/Debug/netcoreapp3.1/Hw1.AssemblyInfo.cs
+/Users/nihadae/Desktop/Hw1/Hw1/obj/Debug/netcoreapp3.1/Hw1.csproj.CoreCompileInputs.cache
+/Users/nihadae/Desktop/Hw1/Hw1/obj/Debug/netcoreapp3.1/Hw1.dll
+/Users/nihadae/Desktop/Hw1/Hw1/obj/Debug/netcoreapp3.1/Hw1.pdb
+/Users/nihadae/Desktop/Hw1/Hw1/obj/Debug/netcoreapp3.1/Hw1.genruntimeconfig.cache
